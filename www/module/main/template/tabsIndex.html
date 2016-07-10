@@ -1,0 +1,10 @@
+<ion-view title="首页">
+	<ion-content style="top: 0px;">
+		<ion-slide-box ng-if="imgArr.length>1" does-continue="true" show-pager="true" auto-play="true" slide-interval="3000" class="m-b-15">
+			<ion-slide ng-repeat="img in imgArr">
+				<img ng-src="{{img.address}}" width="100%" height="auto">
+			</ion-slide>
+		</ion-slide-box>
+		我是内容
+	</ion-content>
+</ion-view>

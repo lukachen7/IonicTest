@@ -1,0 +1,9 @@
+<ion-view title="功能菜单">
+	<div class="bar bar-subheader" style="text-align: center;">
+        <div class="button-bar" style="padding-left: 25%;padding-right: 25%;">
+        		<a class="button" ng-class="funcMenuSelected == 1?'active':''" href="#/navMenu/tabsMain/tabsFuncMenu/funcMenuFirst">功能一</a>
+            <a class="button" ng-class="funcMenuSelected == 2?'active':''" href="#/navMenu/tabsMain/tabsFuncMenu/funcMenuSecond">功能二</a>
+        </div>
+    </div>
+    <ion-nav-view animation="slide-left-right" name="funcMenuContent"></ion-nav-view>
+</ion-view>

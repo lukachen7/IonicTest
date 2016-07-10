@@ -1,0 +1,14 @@
+<ion-view title="个人中心">
+	<ion-pane>
+		<ion-content>
+			<ion-refresher pulling-text="刷新" on-refresh="onRefresh()">我是自定义</ion-refresher>
+			<ion-list>
+				<ion-item ng-repeat="item in listData" style="padding: 5px 5px 5px 5px;">
+					<div style="background-color: #FFC900;height: 70px;">{{item.id}}:{{item.name}}</div>
+					
+				</ion-item>
+				<ion-infinite-scroll on-infinite="loadMore()" spinner="ios"></ion-infinite-scroll>
+			</ion-list>
+		</ion-content>
+	</ion-pane>
+</ion-view>
