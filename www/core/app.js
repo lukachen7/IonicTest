@@ -19,7 +19,7 @@
 //			registerModule: registerModule
 //		};
 //	})();
-	angular.module('IonicNav',['ionic','toastr']);
+	angular.module('IonicNav',['ionic','toastr','ngResource']);
 	angular.module('IonicNav')
 		.run(['$rootScope','UserData','$state','HttpService','ACKeyRule','$ionicPlatform',
             function($rootScope,UserData,$state,HttpService,ACKeyRule,$ionicPlatform) {
